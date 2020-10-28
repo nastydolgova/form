@@ -355,13 +355,13 @@
     </p>
     <button class="buttonForm" type="submit">Создать пользователя</button>
     <div class="div_success" v-if="submitStatus === 'OK'">
-      <span class="form-span"> Пользователь 
+      <p> Пользователь 
         <strong>
         {{ this.user.name }}
         {{ this.user.surname }}
      </strong>
-     успешно создан! </span>
-     <span>Всех пользователей можете увидеть в консоли</span>
+     успешно создан! </p>
+     <p>Всех пользователей можете увидеть в консоли</p>
     </div>
   </form>
 </template>
@@ -623,7 +623,6 @@ div.form-item.error__input .error
 
 .div_success
     position: fixed
-    min-width: 200px
     min-height: 200px
     bottom: 40%
     background-color: #afe3cb
